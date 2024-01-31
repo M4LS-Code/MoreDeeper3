@@ -16,6 +16,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import net.M4ls.Needtogomoredeeper.Item.ModCreativeModTabs;
+import net.M4ls.Needtogomoredeeper.Item.ModCreativeModTabs.*;
 
 import java.security.Key;
 
@@ -43,9 +45,10 @@ public class Moredeeper {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.key);
-            event.accept(ModItems.voidfragment);
+        CREATIVE_MODE_TABS.register(bus)
+        if(event.getTab() == ModCreativeModTabs.MORE_DEEPER.get()) {
+            event.accept(ModItems.KEY);
+            event.accept(ModItems.VOIDFRAGMENT);
         }
 
 

@@ -13,10 +13,10 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Moredeeper.MOD_ID);
 
-    public static final RegistryObject<Item> key = ITEMS.register("key",
+    public static final RegistryObject<Item> KEY = ITEMS.register("key",
             () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> voidfragment = ITEMS.register("voidfragment",
+    public static final RegistryObject<Item> VOIDFRAGMENT = ITEMS.register("voidfragment",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

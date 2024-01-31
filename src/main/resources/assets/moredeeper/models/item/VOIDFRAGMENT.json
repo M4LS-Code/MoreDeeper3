@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "moredeeper:item/key"
+    "layer0": "moredeeper:item/VOIDFRAGMENT"
   }
 }
