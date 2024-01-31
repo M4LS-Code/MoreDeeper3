@@ -32,6 +32,8 @@ public class Moredeeper {
 
         ModItems.register(modEventBus);
 
+        ModCreativeModTabs.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -45,7 +47,6 @@ public class Moredeeper {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        CREATIVE_MODE_TABS.register(bus)
         if(event.getTab() == ModCreativeModTabs.MORE_DEEPER.get()) {
             event.accept(ModItems.KEY);
             event.accept(ModItems.VOIDFRAGMENT);
