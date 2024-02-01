@@ -20,9 +20,9 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.more_deeper"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.KEY.get());
-                        pOutput.accept(ModItems.VOIDFRAGMENT.get());
-
-                        pOutput.accept(Items.DIAMOND);
+                        pOutput.accept(ModItems.EMBERKEY.get());
+                        pOutput.accept(ModItems.FROSTBITEKEY.get());
+                        pOutput.accept(ModItems.EARTHQUAKEKEY.get());
 
 
                     })
@@ -35,7 +35,9 @@ public class ModCreativeModTabs {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTab() == ModCreativeModTabs.MORE_DEEPER.get()) {
             event.accept(ModItems.KEY);
-            event.accept(ModItems.VOIDFRAGMENT);
+            event.accept(ModItems.EMBERKEY);
+            event.accept(ModItems.FROSTBITEKEY);
+            event.accept(ModItems.EARTHQUAKEKEY);
         }
 
 

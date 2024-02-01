@@ -49,7 +49,9 @@ public class Moredeeper {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTab() == ModCreativeModTabs.MORE_DEEPER.get()) {
             event.accept(ModItems.KEY);
-            event.accept(ModItems.VOIDFRAGMENT);
+            event.accept(ModItems.EMBERKEY);
+            event.accept(ModItems.FROSTBITEKEY);
+            event.accept(ModItems.EARTHQUAKEKEY);
         }
 
 

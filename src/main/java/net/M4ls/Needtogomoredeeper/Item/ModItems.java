@@ -16,7 +16,13 @@ public class ModItems {
     public static final RegistryObject<Item> KEY = ITEMS.register("key",
             () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> VOIDFRAGMENT = ITEMS.register("voidfragment",
+    public static final RegistryObject<Item> EMBERKEY = ITEMS.register("embercorekey",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> FROSTBITEKEY = ITEMS.register("frostbitekey",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> EARTHQUAKEKEY = ITEMS.register("earthquakekey",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
