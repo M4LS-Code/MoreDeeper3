@@ -1,5 +1,8 @@
 {
   "item.moredeeper.key": "Abysmal Key",
-  "item.moredeeper.voidfragment": "Void Fragment",
-  "creativetab.more_deeper": "Need To Go More Deeper"
+  "item.moredeeper.embercorekey": "EmberCore Key",
+  "item.moredeeper.frostbitekey": "FrostBite Key",
+  "item.moredeeper.earthquakekey": "EarthQuake Key",
+  "creativetab.more_deeper": "Need To Go More Deeper",
+  "block.moredeeper.darkrack": "Darkrack"
 }

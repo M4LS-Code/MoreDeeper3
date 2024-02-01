@@ -16,7 +16,7 @@ public class ModItems {
     public static final RegistryObject<Item> KEY = ITEMS.register("key",
             () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> EMBERKEY = ITEMS.register("embercorekey",
+    public static final RegistryObject<Item> EMBERCOREKEY = ITEMS.register("embercorekey",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> FROSTBITEKEY = ITEMS.register("frostbitekey",

@@ -1,6 +1,7 @@
 package net.M4ls.Needtogomoredeeper.Item;
 
 import net.M4ls.Needtogomoredeeper.Moredeeper;
+import net.M4ls.Needtogomoredeeper.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,8 +20,9 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.KEY.get()))
                     .title(Component.translatable("creativetab.more_deeper"))
                     .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModBlocks.DARKRACK.get());
                         pOutput.accept(ModItems.KEY.get());
-                        pOutput.accept(ModItems.EMBERKEY.get());
+                        pOutput.accept(ModItems.EMBERCOREKEY.get());
                         pOutput.accept(ModItems.FROSTBITEKEY.get());
                         pOutput.accept(ModItems.EARTHQUAKEKEY.get());
 
@@ -35,7 +37,7 @@ public class ModCreativeModTabs {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTab() == ModCreativeModTabs.MORE_DEEPER.get()) {
             event.accept(ModItems.KEY);
-            event.accept(ModItems.EMBERKEY);
+            event.accept(ModItems.EMBERCOREKEY);
             event.accept(ModItems.FROSTBITEKEY);
             event.accept(ModItems.EARTHQUAKEKEY);
         }
